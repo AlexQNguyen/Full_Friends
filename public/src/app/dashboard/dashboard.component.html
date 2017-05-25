@@ -1,0 +1,8 @@
+<h3>List of Friends</h3>
+<ul *ngFor="let friend of friends">
+  <li> {{ friend.first_name }}   {{ friend.last_name }}</li>
+  <a [routerLink]="['/show',friend._id]">show</a>
+  <a [routerLink]="['/edit',friend._id]">Edit</a>
+  <button (click)="onDelete(friend._id)"> Delete </button>
+</ul>
+<router-outlet></router-outlet>

@@ -1,0 +1,12 @@
+<h3>Edit Page</h3>
+
+
+
+<div *ngIf="friend">
+
+  <form (ngSubmit)="onSubmit()">
+    First Name: <input type="text" name="first_name" [(ngModel)]="friend.first_name" />
+    Last Name: <input type="text" name="last_name" [(ngModel)]="friend.last_name" />
+    <input type="submit" />
+  </form>
+</div>

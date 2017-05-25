@@ -1,0 +1,6 @@
+<h2>Add a Friend</h2>
+<form  (ngSubmit)="onSubmit()">
+  First Name: <input type="text" name="first_name" [(ngModel)]="friend.first_name"/>
+  Last Name: <input type="text" name="last_name" [(ngModel)]="friend.last_name" />
+  <input type="submit" />
+</form>
